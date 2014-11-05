@@ -34,6 +34,7 @@ describe Yelpify::Client do
       VCR.use_cassette('search') do
         response = @client.search(search_data)
         expect(response).to be_a(OpenStruct)
+        expect(response.businesses[0].name).to be_a(String)
       end
     end
   end
