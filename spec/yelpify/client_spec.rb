@@ -27,14 +27,25 @@ describe Yelpify::Client do
 
   describe '#search' do
     it "makes a search request" do
-    @search_data = {
-      "location"        => "austin, texas",
-      "category_filter" => "active,arts"
-    }
-    VCR.use_cassette('search') do
-      response = @client.search(@search_data)
-      expect(response).to be_a(Hash)
+      search_data = {
+        "location"        => "austin, texas",
+        "category_filter" => "active,arts"
+      }
+      VCR.use_cassette('search') do
+        response = @client.search(search_data)
+        expect(response).to be_a(Hash)
+      end
     end
+  end
+
+  describe '#business' do
+    it "makes a business request" do
+      id = "yelp-san-francisco"
+
+      VCR.use_cassette('business') do
+        response = @client.business(id)
+        expect(response).to be_a(Hash)
+      end
     end
   end
 

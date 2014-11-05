@@ -13,7 +13,7 @@ module Yelpify
       get(url)
     end
 
-    def business(id, data)
+    def business(id, data=nil)
       url = @business.build_url(id, data)
       get(url)
     end

@@ -1,0 +1,80 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.yelp.com/v2/business/yelp-san-francisco
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - OAuth gem v0.4.7
+      Authorization:
+      - OAuth oauth_consumer_key="q_5VHCkxQcT1B4hxcCM_2w", oauth_nonce="GrkqN8H2KPsKx1VhqupD7VUn7sCRUHWApXTQLgFE6O0",
+        oauth_signature="e8l1ppFo8GGR7Wg6x2nWI%2BKxOvA%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1415210952", oauth_token="udKMZsaQQ5B3UuXNob4jHtOuzPW4scNl",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 05 Nov 2014 18:12:39 GMT
+      Server:
+      - Apache
+      X-Node:
+      - web10-r2-sfo2, api_com
+      Cache-Control:
+      - private
+      Set-Cookie:
+      - bse=30a17e0be5deeecee0db36c310d68ba0; Domain=.yelp.com; Path=/; HttpOnly
+      - yuv=F3FfcUDUJw_XsJdNZW97ACciV6W6CsWpuCN7gMP71ZWKCbGb2puNQLSJIBaTc9-z4HjCwuWWTLRe94Q9vvlfs1m8EzUpCY4N;
+        Domain=.yelp.com; Max-Age=630720000; Path=/; expires=Tue, 31-Oct-2034 18:12:39
+        GMT
+      Content-Length:
+      - '2320'
+      Vary:
+      - User-Agent
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Mode:
+      - rw
+      X-Proxied:
+      - extlb1-r4-sfo2
+      - lb2
+    body:
+      encoding: UTF-8
+      string: '{"is_claimed": true, "rating": 2.5, "mobile_url": "http://m.yelp.com/biz/yelp-san-francisco",
+        "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c7fb9aff59f9/ico/stars/v1/stars_2_half.png",
+        "review_count": 6487, "name": "Yelp", "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/HzYt0-Kfk7EOJGGJNPgz0A/ms.jpg",
+        "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/8e8633e5f8f0/ico/stars/v1/stars_small_2_half.png",
+        "url": "http://www.yelp.com/biz/yelp-san-francisco", "reviews": [{"rating":
+        5, "excerpt": "Wow another year has gone by and another year of Yelping.  I
+        have used Yelp in every capacity I can.  I love the App when I am out of town
+        and finding some...", "time_created": 1415143053, "rating_image_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+        "rating_image_small_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+        "user": {"image_url": "http://s3-media2.fl.yelpcdn.com/photo/rQbdbYPq5LTH702QqZqlNg/ms.jpg",
+        "id": "BnBQ0UU9uSiI_0cbCZ4lsw", "name": "Paul K."}, "rating_image_large_url":
+        "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+        "id": "xQB2x1Qncg0d4DichM23Tw"}], "phone": "4159083801", "snippet_text": "Yelp
+        is the shiznit :\n\nYelp 2010\n\nI came across Yelp about four years ago,
+        when I saw a buddy of mine check in at a store. So I signed up to see what''s...",
+        "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/EHCfkEpZraIfPl8gvCo1tg/ms.jpg",
+        "categories": [["Local Flavor", "localflavor"], ["Local Services", "localservices"],
+        ["Mass Media", "massmedia"]], "display_phone": "+1-415-908-3801", "rating_img_url_large":
+        "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/d63e3add9901/ico/stars/v1/stars_large_2_half.png",
+        "id": "yelp-san-francisco", "is_closed": false, "location": {"cross_streets":
+        "Natoma St \u0026 Minna St", "city": "San Francisco", "display_address": ["140
+        New Montgomery St", "Financial District", "San Francisco, CA 94105"], "geo_accuracy":
+        9.5, "neighborhoods": ["Financial District", "SoMa"], "postal_code": "94105",
+        "country_code": "US", "address": ["140 New Montgomery St"], "coordinate":
+        {"latitude": 37.786770336292903, "longitude": -122.39995837211499}, "state_code":
+        "CA"}}'
+    http_version: 
+  recorded_at: Wed, 05 Nov 2014 18:09:17 GMT
+recorded_with: VCR 2.9.3
