@@ -2,6 +2,7 @@ require "oauth"
 require "json"
 require "uri"
 require 'dotenv'
+require 'ostruct'
 
 require "yelpify/client"
 require "yelpify/search"
@@ -9,6 +10,8 @@ require "yelpify/business"
 require "yelpify/authorization"
 require "yelpify/version"
 require "yelpify/errors/invalid_credentials"
+require "yelpify/utils"
+
 Dotenv.load
 
 module Yelpify

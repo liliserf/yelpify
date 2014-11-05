@@ -21,8 +21,8 @@ module Yelpify
     private
 
     def get(url)
-      response = access_token.get(url).body
-      JSON.parse(response)
+      response = JSON.parse(access_token.get(url).body)
+      convert_to_ostruct(response)
     end
 
   end

@@ -49,6 +49,7 @@ describe Yelpify::Client do
     end
   end
 
+
 end
 
 # test that a hash is returned
