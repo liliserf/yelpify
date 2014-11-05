@@ -33,7 +33,7 @@ describe Yelpify::Client do
       }
       VCR.use_cassette('search') do
         response = @client.search(search_data)
-        expect(response).to be_a(Hash)
+        expect(response).to be_a(OpenStruct)
       end
     end
   end
@@ -44,7 +44,7 @@ describe Yelpify::Client do
 
       VCR.use_cassette('business') do
         response = @client.business(id)
-        expect(response).to be_a(Hash)
+        expect(response).to be_a(OpenStruct)
       end
     end
   end

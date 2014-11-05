@@ -22,7 +22,7 @@ module Yelpify
 
     def get(url)
       response = JSON.parse(access_token.get(url).body)
-      convert_to_ostruct(response)
+      Yelpify::Utils.convert_to_ostruct(response)
     end
 
   end
