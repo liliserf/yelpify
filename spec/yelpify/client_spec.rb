@@ -1,5 +1,6 @@
 require 'spec_helper'
 
+
 describe Yelpify::Client do
     before(:all) do
       @creds = {
@@ -30,8 +31,10 @@ describe Yelpify::Client do
       "location"        => "austin, texas",
       "category_filter" => "active,arts"
     }
-    response = @client.search(@search_data)
-    expect(response.class).to be_a(Hash)
+    VCR.use_cassette('search') do
+      response = @client.search(@search_data)
+      expect(response).to be_a(Hash)
+    end
     end
   end
 

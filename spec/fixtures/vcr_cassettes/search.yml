@@ -1,0 +1,429 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.yelp.com/v2/search?category_filter=active,arts&location=austin,%20texas
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - OAuth gem v0.4.7
+      Authorization:
+      - OAuth oauth_consumer_key="q_5VHCkxQcT1B4hxcCM_2w", oauth_nonce="6SGqgEESnrikGwy30LFr75ssCy2KEjRUSk8Rmpib8",
+        oauth_signature="cGgnF0z%2FTuB%2FfvO9n13zInRrblk%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1415210128", oauth_token="udKMZsaQQ5B3UuXNob4jHtOuzPW4scNl",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 05 Nov 2014 17:58:56 GMT
+      Server:
+      - Apache
+      X-Node:
+      - web6-r1-sfo2, api_com
+      Cache-Control:
+      - private
+      Set-Cookie:
+      - bse=a2f5fac2937900fa69814ad804eb2caf; Domain=.yelp.com; Path=/; HttpOnly
+      - yuv=bue9Fv4RVqGyjLyVQyUpTp2jIn5BLOj_0l7hbkzup44JHz19-2XnQuqZyRrh04y7kx2F3NOxseeB_C4uu36EStn_YAKeBxLc;
+        Domain=.yelp.com; Max-Age=630720000; Path=/; expires=Tue, 31-Oct-2034 17:58:56
+        GMT
+      Content-Length:
+      - '33942'
+      Vary:
+      - User-Agent
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Mode:
+      - rw
+      X-Proxied:
+      - extlb1-r4-sfo2
+      - lb1
+    body:
+      encoding: UTF-8
+      string: '{"region": {"span": {"latitude_delta": 0.10454674999999725, "longitude_delta":
+        0.11186010000000124}, "center": {"latitude": 30.28013825, "longitude": -97.74308529999999}},
+        "total": 2131, "businesses": [{"is_claimed": false, "rating": 5.0, "mobile_url":
+        "http://m.yelp.com/biz/town-lake-metropolitan-parks-austin", "rating_img_url":
+        "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+        "review_count": 145, "name": "Town Lake Metropolitan Parks", "snippet_image_url":
+        "http://s3-media4.fl.yelpcdn.com/photo/tQv317c4v2iBLsizYbSZJg/ms.jpg", "rating_img_url_small":
+        "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+        "url": "http://www.yelp.com/biz/town-lake-metropolitan-parks-austin", "snippet_text":
+        "This is my favorite place in Austin to go. It''s a good place to clear your
+        mind and exercise or just hang out. Sometimes I walk/run the trail and I have...",
+        "image_url": "http://s3-media4.fl.yelpcdn.com/bphoto/buw3l9qMGsAD1RECpaOiqg/ms.jpg",
+        "categories": [["Parks", "parks"]], "rating_img_url_large": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+        "id": "town-lake-metropolitan-parks-austin", "is_closed": false, "location":
+        {"city": "Austin", "display_address": ["Town Lake", "Austin, TX 78701"], "geo_accuracy":
+        9.5, "neighborhoods": ["Town Lake"], "postal_code": "78701", "country_code":
+        "US", "address": [], "coordinate": {"latitude": 30.270894725696699, "longitude":
+        -97.764859918551593}, "state_code": "TX"}}, {"is_claimed": false, "rating":
+        5.0, "mobile_url": "http://m.yelp.com/biz/barton-creek-greenbelt-austin",
+        "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+        "review_count": 153, "name": "Barton Creek Greenbelt", "snippet_image_url":
+        "http://s3-media2.fl.yelpcdn.com/photo/fXVwiiUITlrEUwZNPebeRQ/ms.jpg", "rating_img_url_small":
+        "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+        "url": "http://www.yelp.com/biz/barton-creek-greenbelt-austin", "snippet_text":
+        "I just went to the greenbelt today, Aug. 16, 2014, with my family and we
+        had such an amazing time! We came early, around 10:30am, and there was plenty
+        of...", "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/Tqt6bN7KzH2UNcaDIxa0fA/ms.jpg",
+        "categories": [["Parks", "parks"]], "rating_img_url_large": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+        "id": "barton-creek-greenbelt-austin", "is_closed": false, "location": {"city":
+        "Austin", "display_address": ["2201 Barton Springs Rd", "Barton Hills", "Austin,
+        TX 78746"], "geo_accuracy": 8.0, "neighborhoods": ["Barton Hills", "78704
+        (South Austin)"], "postal_code": "78746", "country_code": "US", "address":
+        ["2201 Barton Springs Rd"], "coordinate": {"latitude": 30.265920600000001,
+        "longitude": -97.768638600000003}, "state_code": "TX"}}, {"is_claimed": true,
+        "rating": 5.0, "mobile_url": "http://m.yelp.com/biz/eastside-yoga-austin",
+        "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+        "review_count": 46, "name": "Eastside Yoga", "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/cc4afe21892e/default_avatars/user_medium_square.png",
+        "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+        "url": "http://www.yelp.com/biz/eastside-yoga-austin", "menu_date_updated":
+        1387665983, "phone": "5127798543", "snippet_text": "This review is mainly
+        for Elsa''s classes, although the other classes I went to were wonderful as
+        well. \n\nI have been recovering from a knee injury and upon...", "image_url":
+        "http://s3-media2.fl.yelpcdn.com/bphoto/WcI9BYAV0fMoQ9VAdArQQw/ms.jpg", "categories":
+        [["Yoga", "yoga"]], "display_phone": "+1-512-779-8543", "rating_img_url_large":
+        "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+        "menu_provider": "single_platform", "id": "eastside-yoga-austin", "is_closed":
+        false, "location": {"city": "Austin", "display_address": ["1050 E 11th St",
+        "Ste 150", "East Austin", "Austin, TX 78702"], "geo_accuracy": 8.0, "neighborhoods":
+        ["East Austin"], "postal_code": "78702", "country_code": "US", "address":
+        ["1050 E 11th St", "Ste 150"], "coordinate": {"latitude": 30.2692795, "longitude":
+        -97.728988599999994}, "state_code": "TX"}}, {"is_claimed": true, "rating":
+        5.0, "mobile_url": "http://m.yelp.com/biz/toddpilates-fitness-austin-2", "rating_img_url":
+        "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+        "review_count": 65, "name": "ToddPilates Fitness", "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/j-BQWGIH_0Xe4S90FFYvMA/ms.jpg",
+        "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+        "url": "http://www.yelp.com/biz/toddpilates-fitness-austin-2", "phone": "5126596740",
+        "snippet_text": "I''ve been coming here off and on since December 2013. The
+        staff is always extremely friendly and never pretentious. I love Barre class
+        but find most studios...", "image_url": "http://s3-media3.fl.yelpcdn.com/bphoto/FgHVeggy7tm1_1MAwgtCJA/ms.jpg",
+        "categories": [["Pilates", "pilates"]], "display_phone": "+1-512-659-6740",
+        "rating_img_url_large": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+        "id": "toddpilates-fitness-austin-2", "is_closed": false, "location": {"city":
+        "Austin", "display_address": ["4032 S Lamar Blvd", "Ste 700", "Austin, TX
+        78704"], "geo_accuracy": 8.0, "postal_code": "78704", "country_code": "US",
+        "address": ["4032 S Lamar Blvd", "Ste 700"], "coordinate": {"latitude": 30.236459700000001,
+        "longitude": -97.793510400000002}, "state_code": "TX"}}, {"is_claimed": true,
+        "rating": 4.5, "mobile_url": "http://m.yelp.com/biz/barton-springs-pool-austin",
+        "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 433, "name": "Barton Springs Pool", "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/Ptkw_-xRSBsuBCbHDhaxiQ/ms.jpg",
+        "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/barton-springs-pool-austin", "phone": "5124769044",
+        "snippet_text": "As a out of towner I''m super jealous I don''t have access
+        to Barton Springs everyday.\nMy friends and I were visiting for a wedding
+        and we went three days in...", "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/4XZO67N5Ufi5OSgIulpQBA/ms.jpg",
+        "categories": [["Swimming Pools", "swimmingpools"], ["Parks", "parks"], ["Recreation
+        Centers", "recreation"]], "display_phone": "+1-512-476-9044", "rating_img_url_large":
+        "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "id": "barton-springs-pool-austin", "is_closed": false, "location": {"city":
+        "Austin", "display_address": ["2201 Barton Springs Rd", "Barton Hills", "Austin,
+        TX 78704"], "geo_accuracy": 8.0, "neighborhoods": ["Barton Hills", "78704
+        (South Austin)"], "postal_code": "78704", "country_code": "US", "address":
+        ["2201 Barton Springs Rd"], "coordinate": {"latitude": 30.265920600000001,
+        "longitude": -97.768638600000003}, "state_code": "TX"}}, {"is_claimed": true,
+        "rating": 5.0, "mobile_url": "http://m.yelp.com/biz/rocket-electrics-electric-bicycle-rentals-tours-and-sales-austin",
+        "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+        "review_count": 61, "name": "Rocket Electrics Electric Bicycle Rentals, Tours,
+        and Sales", "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/qc8h1PnaPcGQLOqYp0AuyQ/ms.jpg",
+        "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+        "url": "http://www.yelp.com/biz/rocket-electrics-electric-bicycle-rentals-tours-and-sales-austin",
+        "phone": "5124422453", "snippet_text": "A definite out of town visitor must,
+        a great way to see the sights, and sample some of the flavor Austin has to
+        offer.  \n\nI was skeptical at first if Rocket...", "image_url": "http://s3-media3.fl.yelpcdn.com/bphoto/P9D2-YvoE2a8ORVIIvC_BQ/ms.jpg",
+        "categories": [["Bike Rentals", "bikerentals"], ["Bikes", "bikes"], ["Bike
+        Repair/Maintenance", "bike_repair_maintenance"]], "display_phone": "+1-512-442-2453",
+        "rating_img_url_large": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+        "id": "rocket-electrics-electric-bicycle-rentals-tours-and-sales-austin",
+        "is_closed": false, "location": {"city": "Austin", "display_address": ["1608
+        E Riverside Dr", "Austin, TX 78741"], "geo_accuracy": 9.5, "postal_code":
+        "78741", "country_code": "US", "address": ["1608 E Riverside Dr"], "coordinate":
+        {"latitude": 30.245638266018101, "longitude": -97.7305233478546}, "state_code":
+        "TX"}}, {"is_claimed": false, "rating": 5.0, "mobile_url": "http://m.yelp.com/biz/broadway-in-austin-at-texas-performing-arts-austin",
+        "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+        "review_count": 95, "name": "Broadway in Austin at Texas Performing Arts",
+        "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/-icnYBivF3oVh3tpWF_VLQ/ms.jpg",
+        "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+        "url": "http://www.yelp.com/biz/broadway-in-austin-at-texas-performing-arts-austin",
+        "phone": "8007317469", "snippet_text": "I love the theater! Many of my childhood
+        memories with my grandparents are going to the theater. So take me there as
+        much as you can!\n\nThe shows at Broadway...", "image_url": "http://s3-media4.fl.yelpcdn.com/bphoto/mQSaEQGLGQYxCo7sn-WRdg/ms.jpg",
+        "categories": [["Performing Arts", "theater"]], "display_phone": "+1-800-731-7469",
+        "rating_img_url_large": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+        "id": "broadway-in-austin-at-texas-performing-arts-austin", "is_closed": false,
+        "location": {"city": "Austin", "display_address": ["23rd St and Robert Dedman
+        Dr", "University of Texas", "Austin, TX 78712"], "geo_accuracy": 9.5, "neighborhoods":
+        ["University of Texas"], "postal_code": "78712", "country_code": "US", "address":
+        ["23rd St and Robert Dedman Dr"], "coordinate": {"latitude": 30.284477299999999,
+        "longitude": -97.730847600000004}, "state_code": "TX"}}, {"is_claimed": true,
+        "rating": 5.0, "mobile_url": "http://m.yelp.com/biz/dancers-shape-barre-fitness-austin",
+        "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+        "review_count": 64, "name": "Dancers Shape - Barre Fitness", "snippet_image_url":
+        "http://s3-media1.fl.yelpcdn.com/photo/7jG6U-tHsiz-D0VbDPuzWw/ms.jpg", "rating_img_url_small":
+        "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+        "url": "http://www.yelp.com/biz/dancers-shape-barre-fitness-austin", "phone":
+        "5123829150", "snippet_text": "I''ve been working out at Dancers Shape for
+        almost two months now and I can''t get enough. Not only are the classes amazing
+        but the staff is exceptional....", "image_url": "http://s3-media3.fl.yelpcdn.com/bphoto/gqrP5FxPpThp6yNJCKXEvA/ms.jpg",
+        "categories": [["Yoga", "yoga"], ["Pilates", "pilates"], ["Barre Classes",
+        "barreclasses"]], "display_phone": "+1-512-382-9150", "rating_img_url_large":
+        "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+        "id": "dancers-shape-barre-fitness-austin", "is_closed": false, "location":
+        {"city": "Austin", "display_address": ["5350 Burnet Rd", "Ste 7", "Allandale",
+        "Austin, TX 78756"], "geo_accuracy": 8.0, "neighborhoods": ["Allandale"],
+        "postal_code": "78756", "country_code": "US", "address": ["5350 Burnet Rd",
+        "Ste 7"], "coordinate": {"latitude": 30.327590900000001, "longitude": -97.740386999999998},
+        "state_code": "TX"}}, {"is_claimed": true, "rating": 5.0, "mobile_url": "http://m.yelp.com/biz/live-love-paddle-austin-2",
+        "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+        "review_count": 61, "name": "Live Love Paddle", "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/R258rOFXOxVRD-jtPfgIfQ/ms.jpg",
+        "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+        "url": "http://www.yelp.com/biz/live-love-paddle-austin-2", "phone": "5128042122",
+        "snippet_text": "Came here to go kayaking while visiting a friend in Austin,
+        TX. Luckily he lives right behind the boardwalk and it was walking distance
+        to Live Love Paddle....", "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/dFL4IMQBkC4UfGMjRy5Ciw/ms.jpg",
+        "categories": [["Rafting/Kayaking", "rafting"], ["Paddleboarding", "paddleboarding"],
+        ["Tours", "tours"]], "display_phone": "+1-512-804-2122", "rating_img_url_large":
+        "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+        "id": "live-love-paddle-austin-2", "is_closed": false, "location": {"city":
+        "Austin", "display_address": ["1602 E Riverside Dr", "Austin, TX 78741"],
+        "geo_accuracy": 9.5, "postal_code": "78741", "country_code": "US", "address":
+        ["1602 E Riverside Dr"], "coordinate": {"latitude": 30.246060700000001, "longitude":
+        -97.731545100000005}, "state_code": "TX"}}, {"is_claimed": true, "rating":
+        4.5, "mobile_url": "http://m.yelp.com/biz/esthers-follies-austin-2", "rating_img_url":
+        "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 234, "name": "Esther''s Follies", "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/K7UU-5DETISmZn6J-yjmLA/ms.jpg",
+        "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/esthers-follies-austin-2", "phone": "5123200553",
+        "snippet_text": "If you have not been to Esther''s Follies, I demand that
+        you go! \n\n\nGet your tickets.\n\n\nNow.", "image_url": "http://s3-media3.fl.yelpcdn.com/bphoto/8ISHNGXxPr26FOG_BSg9Tg/ms.jpg",
+        "categories": [["Performing Arts", "theater"], ["Comedy Clubs", "comedyclubs"]],
+        "display_phone": "+1-512-320-0553", "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "id": "esthers-follies-austin-2", "is_closed": false, "location": {"city":
+        "Austin", "display_address": ["525 E 6th St", "Downtown", "Austin, TX 78701"],
+        "geo_accuracy": 8.0, "neighborhoods": ["Downtown", "Sixth Street District"],
+        "postal_code": "78701", "country_code": "US", "address": ["525 E 6th St"],
+        "coordinate": {"latitude": 30.2663498, "longitude": -97.737533600000006},
+        "state_code": "TX"}}, {"is_claimed": true, "rating": 4.5, "mobile_url": "http://m.yelp.com/biz/rogue-running-austin",
+        "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 74, "name": "Rogue Running", "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/65PLGh4uqSzsaSW-rYHXgg/ms.jpg",
+        "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/rogue-running-austin", "phone": "5124930920",
+        "snippet_text": "I went here about 3 weeks before they moved to downtown.
+        \n\nIt was December 27, and I decided to buy myself some new running shoes
+        with my Christmas money....", "image_url": "http://s3-media1.fl.yelpcdn.com/bphoto/O9HcKCTt5ix2fQptoDm_TA/ms.jpg",
+        "categories": [["Trainers", "healthtrainers"], ["Sports Wear", "sportswear"]],
+        "display_phone": "+1-512-493-0920", "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "id": "rogue-running-austin", "is_closed": true, "location": {"city": "Austin",
+        "display_address": ["500 San Marcos St", "East Austin", "Austin, TX 78702"],
+        "geo_accuracy": 9.5, "neighborhoods": ["East Austin"], "postal_code": "78702",
+        "country_code": "US", "address": ["500 San Marcos St"], "coordinate": {"latitude":
+        30.264553899999999, "longitude": -97.732868800000006}, "state_code": "TX"}},
+        {"is_claimed": true, "rating": 4.5, "mobile_url": "http://m.yelp.com/biz/alamo-drafthouse-cinema-austin-6",
+        "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 428, "name": "Alamo Drafthouse Cinema", "snippet_image_url":
+        "http://s3-media2.fl.yelpcdn.com/photo/ROU3EFSBfEbw9G6TGhHYKw/ms.jpg", "rating_img_url_small":
+        "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/alamo-drafthouse-cinema-austin-6", "phone":
+        "5124761320", "snippet_text": "I love the Alamo in general, but had never
+        been to the downtown location. The whole place has the cool old move house
+        feel--when they were called houses and...", "image_url": "http://s3-media1.fl.yelpcdn.com/bphoto/HnHfxdKoFEu2zJONyGzNjA/ms.jpg",
+        "categories": [["Cinema", "movietheaters"]], "display_phone": "+1-512-476-1320",
+        "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "id": "alamo-drafthouse-cinema-austin-6", "is_closed": false, "location":
+        {"city": "Austin", "display_address": ["320 E 6th Street", "Downtown", "Austin,
+        TX 78701"], "geo_accuracy": 8.0, "neighborhoods": ["Downtown", "Sixth Street
+        District"], "postal_code": "78701", "country_code": "US", "address": ["320
+        E 6th Street"], "coordinate": {"latitude": 30.267447000000001, "longitude":
+        -97.739509999999996}, "state_code": "TX"}}, {"is_claimed": false, "rating":
+        5.0, "mobile_url": "http://m.yelp.com/biz/bijou-studio-austin", "rating_img_url":
+        "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+        "review_count": 25, "name": "Bijou Studio", "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/pa2ezf8oVd15MIwLwRFHhg/ms.jpg",
+        "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+        "url": "http://www.yelp.com/biz/bijou-studio-austin", "phone": "5124741975",
+        "snippet_text": "Megan is absolutely amazing. She just finished my second
+        tattoo and my boyfriend''s entire sleeve. Not only is she extremely talented
+        as an artist but she is...", "image_url": "http://s3-media4.fl.yelpcdn.com/bphoto/6hYlFFhwbnhdZ-S0U2M9IQ/ms.jpg",
+        "categories": [["Art Galleries", "galleries"], ["Tattoo", "tattoo"]], "display_phone":
+        "+1-512-474-1975", "rating_img_url_large": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+        "id": "bijou-studio-austin", "is_closed": false, "location": {"city": "Austin",
+        "display_address": ["1618 E 6th St", "East Austin", "Austin, TX 78702"], "geo_accuracy":
+        8.0, "neighborhoods": ["East Austin"], "postal_code": "78702", "country_code":
+        "US", "address": ["1618 E 6th St"], "coordinate": {"latitude": 30.262829,
+        "longitude": -97.725043999999997}, "state_code": "TX"}}, {"is_claimed": true,
+        "rating": 5.0, "mobile_url": "http://m.yelp.com/biz/sherpa-fitness-austin",
+        "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+        "review_count": 28, "name": "Sherpa Fitness", "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/ICd8_FVmAInkw--kq3d4HQ/ms.jpg",
+        "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+        "url": "http://www.yelp.com/biz/sherpa-fitness-austin", "deals": [{"is_popular":
+        true, "what_you_get": "You get a voucher redeemable for $130 at Sherpa Fitness.\nPrint
+        out your voucher, or redeem on your phone with the \u003ca href=\"http://www.yelp.com/yelpmobile\"\u003eYelp
+        app\u003c/a\u003e.", "time_start": 1330442095, "title": "$65 for $130", "url":
+        "http://www.yelp.com/deals/sherpa-fitness-austin", "additional_restrictions":
+        "Promotion lasts for 1 year from date of purchase. After that period, your
+        voucher is redeemable for the amount you paid, less any value you may have
+        received. Not valid with other vouchers, certificates, or offers. Voucher
+        can only be used for services, not retail products. Only 1 voucher(s) can
+        be purchased and redeemed per person. Up to 2 can be purchased as gifts for
+        others. Subject to the \u003ca target=\"_blank\" href=\"http://www.yelp.com/tos/general_b2c_us_20120911\"\u003eGeneral
+        Terms\u003c/a\u003e.", "options": [{"original_price": 13000, "title": "$65
+        for $130", "price": 6500, "purchase_url": "https://www.yelp.com/checkout/deal/EVnELcQqLn-yI3daw6enuA",
+        "formatted_original_price": "$130", "formatted_price": "$65", "is_quantity_limited":
+        false}], "image_url": "http://s3-media4.fl.yelpcdn.com/dphoto/S8psyv0vjFH1-r0-keYYoA/m.jpg",
+        "id": "WbpTGHFXjJi-AYiudDAr5g", "currency_code": "USD"}], "phone": "5127094029",
+        "snippet_text": "If you enjoy a challenging workout and being outside, Sherpa
+        Fitness is the class for you. It''s by far the best class I''ve ever been
+        to!\n\nI''ve been going...", "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/kObarW01Y2gQF7-ZJF9wxw/ms.jpg",
+        "categories": [["Trainers", "healthtrainers"], ["Gyms", "gyms"]], "display_phone":
+        "+1-512-709-4029", "rating_img_url_large": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+        "id": "sherpa-fitness-austin", "is_closed": false, "location": {"city": "Austin",
+        "display_address": ["511 S Park Dr", "So-Fi (S. 1st St. District)", "Austin,
+        TX 78704"], "geo_accuracy": 8.0, "neighborhoods": ["So-Fi (S. 1st St. District)",
+        "78704 (South Austin)"], "postal_code": "78704", "country_code": "US", "address":
+        ["511 S Park Dr"], "coordinate": {"latitude": 30.232614999999999, "longitude":
+        -97.764754999999994}, "state_code": "TX"}}, {"is_claimed": true, "rating":
+        4.5, "mobile_url": "http://m.yelp.com/biz/dharma-yoga-and-dharma-yoga-east-side-austin-2",
+        "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 63, "name": "Dharma Yoga \u0026 Dharma Yoga East Side", "snippet_image_url":
+        "http://s3-media3.fl.yelpcdn.com/photo/gfUPVjHQ9RcR7e0DFzt7cA/ms.jpg", "rating_img_url_small":
+        "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/dharma-yoga-and-dharma-yoga-east-side-austin-2",
+        "menu_date_updated": 1387643299, "deals": [{"is_popular": true, "what_you_get":
+        "You get a voucher redeemable for $100 at Dharma Yoga \u0026 Dharma Yoga East
+        Side.\nPrint out your voucher, or redeem on your phone with the \u003ca href=\"http://www.yelp.com/yelpmobile\"\u003eYelp
+        app\u003c/a\u003e.", "time_start": 1338348911, "title": "$49 for $100", "url":
+        "http://www.yelp.com/deals/dharma-yoga-austin-2", "additional_restrictions":
+        "Promotion lasts for 1 year from date of purchase. After that period, your
+        voucher is redeemable for the amount you paid, less any value you may have
+        received. Only 1 voucher(s) can be purchased and redeemed per person. Up to
+        3 can be purchased as gifts for others. Subject to the \u003ca target=\"_blank\"
+        href=\"http://www.yelp.com/tos/general_b2c_us_20120911\"\u003eGeneral Terms\u003c/a\u003e.",
+        "options": [{"original_price": 10000, "title": "$49 for $100", "price": 4900,
+        "purchase_url": "https://www.yelp.com/checkout/deal/oe8DMZO5Qlqnk_MnLoqTrg",
+        "formatted_original_price": "$100", "formatted_price": "$49", "is_quantity_limited":
+        false}], "important_restrictions": "New customers only.", "image_url": "http://s3-media3.fl.yelpcdn.com/dphoto/sXFAhLomxcSwllU6VkzzYQ/m.jpg",
+        "id": "4Fons2f2CLKhC_x0QyeUqw", "currency_code": "USD"}], "phone": "5124200009",
+        "snippet_text": "Dharma Yoga is so much more than the usual Right Foot Blue/Left
+        Hand Yellow twister-like approach to yoga that I''ve seen at so many other
+        studios. The...", "image_url": "http://s3-media3.fl.yelpcdn.com/bphoto/f3IcuWPrFt-SdoNMnCWYYA/ms.jpg",
+        "categories": [["Yoga", "yoga"]], "display_phone": "+1-512-420-0009", "rating_img_url_large":
+        "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "menu_provider": "single_platform", "id": "dharma-yoga-and-dharma-yoga-east-side-austin-2",
+        "is_closed": false, "location": {"city": "Austin", "display_address": ["3110
+        Guadalupe St", "University of Texas", "Austin, TX 78705"], "geo_accuracy":
+        9.5, "neighborhoods": ["University of Texas"], "postal_code": "78705", "country_code":
+        "US", "address": ["3110 Guadalupe St"], "coordinate": {"latitude": 30.2984452,
+        "longitude": -97.741250800000003}, "state_code": "TX"}}, {"is_claimed": true,
+        "rating": 5.0, "mobile_url": "http://m.yelp.com/biz/congress-avenue-kayaks-austin",
+        "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+        "review_count": 25, "name": "Congress Avenue Kayaks", "snippet_image_url":
+        "http://s3-media3.fl.yelpcdn.com/photo/InL1VmPEPFnSZDoRp7fayQ/ms.jpg", "rating_img_url_small":
+        "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+        "url": "http://www.yelp.com/biz/congress-avenue-kayaks-austin", "phone": "5128098916",
+        "snippet_text": "I can''t believe I got convinced into doing SUP, stand up
+        paddleboarding.  I have no balance on land let alone water.  However, the
+        things a guy will do for...", "image_url": "http://s3-media4.fl.yelpcdn.com/bphoto/KcaUSUY1x2m2ikgRloqhTw/ms.jpg",
+        "categories": [["Rafting/Kayaking", "rafting"], ["Paddleboarding", "paddleboarding"]],
+        "display_phone": "+1-512-809-8916", "rating_img_url_large": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+        "id": "congress-avenue-kayaks-austin", "is_closed": false, "location": {"city":
+        "Austin", "display_address": ["74 Trinity St", "Austin, TX 78701"], "geo_accuracy":
+        8.0, "postal_code": "78701", "country_code": "US", "address": ["74 Trinity
+        St"], "coordinate": {"latitude": 30.261161999999999, "longitude": -97.741485999999995},
+        "state_code": "TX"}}, {"is_claimed": true, "rating": 4.5, "mobile_url": "http://m.yelp.com/biz/sister-temperance-tarot-austin",
+        "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 35, "name": "Sister Temperance Tarot", "snippet_image_url":
+        "http://s3-media4.fl.yelpcdn.com/photo/jP5K0L7GTJtvjC1sVUHiKg/ms.jpg", "rating_img_url_small":
+        "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/sister-temperance-tarot-austin", "phone":
+        "5124665124", "snippet_text": "Before I even begin this review, I want to
+        say one thing: it doesn''t matter if you''re a cynic or a first timer, your
+        hour with Angeliska will be one of the...", "image_url": "http://s3-media1.fl.yelpcdn.com/bphoto/xP-JHcDkBySl0_HuerFl7Q/ms.jpg",
+        "categories": [["Psychics \u0026 Astrologers", "psychic_astrology"]], "display_phone":
+        "+1-512-466-5124", "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "id": "sister-temperance-tarot-austin", "is_closed": false, "location": {"city":
+        "Austin", "display_address": ["1051 Springdale Rd", "East Austin", "Austin,
+        TX 78721"], "geo_accuracy": 8.0, "neighborhoods": ["East Austin"], "postal_code":
+        "78721", "country_code": "US", "address": ["1051 Springdale Rd"], "coordinate":
+        {"latitude": 30.270799398422199, "longitude": -97.692148312926307}, "state_code":
+        "TX"}}, {"is_claimed": true, "rating": 5.0, "mobile_url": "http://m.yelp.com/biz/austin-simply-fit-austin-2",
+        "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+        "review_count": 28, "name": "Austin Simply Fit", "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/VXDvhrX54PKptcm8ceQOsQ/ms.jpg",
+        "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+        "url": "http://www.yelp.com/biz/austin-simply-fit-austin-2", "deals": [{"is_popular":
+        true, "what_you_get": "You get a voucher redeemable for $75 at Austin Simply
+        Fit.\nPrint out your voucher, or redeem on your phone with the \u003ca href=\"http://www.yelp.com/yelpmobile\"\u003eYelp
+        app\u003c/a\u003e.", "time_start": 1320956374, "title": "$50 for $75", "url":
+        "http://www.yelp.com/deals/austin-simply-fit-austin-2", "additional_restrictions":
+        "Promotion lasts for 1 year from date of purchase. After that period, your
+        voucher is redeemable for the amount you paid, less any value you may have
+        received. Not valid with other vouchers, certificates, or offers. Only 1 voucher(s)
+        can be purchased and redeemed per person. Up to 3 can be purchased as gifts
+        for others. Subject to the \u003ca target=\"_blank\" href=\"http://www.yelp.com/tos/general_b2c_us_20120911\"\u003eGeneral
+        Terms\u003c/a\u003e.", "options": [{"original_price": 7500, "title": "$50
+        for $75", "price": 5000, "purchase_url": "https://www.yelp.com/checkout/deal/1Qy_zrEFBb2i-BMMqRFRNw",
+        "formatted_original_price": "$75", "formatted_price": "$50", "is_quantity_limited":
+        false}], "image_url": "http://s3-media2.fl.yelpcdn.com/dphoto/dJ7qTALUPWtxvL6JKQCeJQ/m.jpg",
+        "id": "8lFGTBTnhsCI-ZBIvDC1Iw", "currency_code": "USD"}], "phone": "5125025032",
+        "snippet_text": "Austin Simply Fit is the bomb!\nNikki, my trainer there has
+        helped me transform my body over the last 6 months. \nI came in at my highest
+        weight feeling...", "image_url": "http://s3-media1.fl.yelpcdn.com/bphoto/WtsGTQI3aoHLgY11voKXyw/ms.jpg",
+        "categories": [["Gyms", "gyms"], ["Trainers", "healthtrainers"], ["Boot Camps",
+        "bootcamps"]], "display_phone": "+1-512-502-5032", "gift_certificates": [{"url":
+        "http://www.yelp.com/gift-certificates/austin-simply-fit-austin-2", "unused_balances":
+        "CASH", "options": [{"price": 2500, "formatted_price": "$25"}, {"price": 5000,
+        "formatted_price": "$50"}, {"price": 7500, "formatted_price": "$75"}, {"price":
+        10000, "formatted_price": "$100"}, {"price": 15000, "formatted_price": "$150"}],
+        "image_url": "http://s3-media1.fl.yelpcdn.com/bphoto/IpHpxUXY0A6jAZqiFQ2iCA/m.jpg",
+        "id": "pcrn86C9_5RWFi9SM5LAEw", "currency_code": "USD"}], "rating_img_url_large":
+        "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+        "id": "austin-simply-fit-austin-2", "is_closed": false, "location": {"city":
+        "Austin", "display_address": ["5134 Burnet Rd", "Rosedale", "Austin, TX 78756"],
+        "geo_accuracy": 8.0, "neighborhoods": ["Rosedale", "Allandale"], "postal_code":
+        "78756", "country_code": "US", "address": ["5134 Burnet Rd"], "coordinate":
+        {"latitude": 30.3234806, "longitude": -97.7397232}, "state_code": "TX"}},
+        {"is_claimed": true, "rating": 5.0, "mobile_url": "http://m.yelp.com/biz/barton-springs-bike-rentals-austin",
+        "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+        "review_count": 60, "name": "Barton Springs Bike Rentals", "snippet_image_url":
+        "http://s3-media3.fl.yelpcdn.com/photo/N_88KKbOa2efFFPStOUCkg/ms.jpg", "rating_img_url_small":
+        "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+        "url": "http://www.yelp.com/biz/barton-springs-bike-rentals-austin", "phone":
+        "5124800200", "snippet_text": "Awesome customer service! I forgot the name
+        of the older gentleman that works here but he was super friendly and helpful!
+        The cost of the bikes range from...", "image_url": "http://s3-media3.fl.yelpcdn.com/bphoto/FYyRp33cJvwojzY-TITzSA/ms.jpg",
+        "categories": [["Bike Rentals", "bikerentals"], ["Tours", "tours"]], "display_phone":
+        "+1-512-480-0200", "rating_img_url_large": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+        "id": "barton-springs-bike-rentals-austin", "is_closed": false, "location":
+        {"city": "Austin", "display_address": ["1707 Barton Springs Rd", "78704 (South
+        Austin)", "Austin, TX 78704"], "geo_accuracy": 8.0, "neighborhoods": ["78704
+        (South Austin)"], "postal_code": "78704", "country_code": "US", "address":
+        ["1707 Barton Springs Rd"], "coordinate": {"latitude": 30.2629108, "longitude":
+        -97.7629929}, "state_code": "TX"}}, {"is_claimed": true, "rating": 4.5, "mobile_url":
+        "http://m.yelp.com/biz/zilker-park-boat-rentals-austin", "rating_img_url":
+        "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "review_count": 92, "name": "Zilker Park Boat Rentals", "snippet_image_url":
+        "http://s3-media1.fl.yelpcdn.com/photo/ayrfnFeWbk7bD_s4gYqU1w/ms.jpg", "rating_img_url_small":
+        "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "url": "http://www.yelp.com/biz/zilker-park-boat-rentals-austin", "phone":
+        "5124783852", "snippet_text": "One of the best ways to enjoy Austin. This
+        is the best canoe/kayak rental in Austin! It''s the most scenic launch area,
+        the most laid back staff and the best...", "image_url": "http://s3-media3.fl.yelpcdn.com/bphoto/6K994oJVY89nQmU-EQgOCQ/ms.jpg",
+        "categories": [["Boating", "boating"], ["Rafting/Kayaking", "rafting"]], "display_phone":
+        "+1-512-478-3852", "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        "id": "zilker-park-boat-rentals-austin", "is_closed": false, "location": {"city":
+        "Austin", "display_address": ["2101 Andrew Zilker Rd", "Barton Hills", "Austin,
+        TX 78746"], "geo_accuracy": 9.5, "neighborhoods": ["Barton Hills", "78704
+        (South Austin)"], "postal_code": "78746", "country_code": "US", "address":
+        ["2101 Andrew Zilker Rd"], "coordinate": {"latitude": 30.264324283169898,
+        "longitude": -97.767498730410793}, "state_code": "TX"}}]}'
+    http_version: 
+  recorded_at: Wed, 05 Nov 2014 17:55:35 GMT
+recorded_with: VCR 2.9.3
