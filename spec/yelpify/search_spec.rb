@@ -6,7 +6,6 @@ describe Yelpify::Search do
       "location" => "austin, texas",
       "category_filter" => "active,arts"
     }
-
   end
 
   describe '#build_url' do 

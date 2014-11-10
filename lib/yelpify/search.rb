@@ -7,7 +7,3 @@ module Yelpify
     end
   end
 end
-
-# the Search Class takes a hash of search data to 
-# generate a path to use for the search in the 
-# Client Class.

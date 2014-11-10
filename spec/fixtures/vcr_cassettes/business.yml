@@ -14,9 +14,9 @@ http_interactions:
       User-Agent:
       - OAuth gem v0.4.7
       Authorization:
-      - OAuth oauth_consumer_key="q_5VHCkxQcT1B4hxcCM_2w", oauth_nonce="GrkqN8H2KPsKx1VhqupD7VUn7sCRUHWApXTQLgFE6O0",
+      - OAuth oauth_consumer_key="<%= ENV['YELP_KEY'] %>", oauth_nonce="GrkqN8H2KPsKx1VhqupD7VUn7sCRUHWApXTQLgFE6O0",
         oauth_signature="e8l1ppFo8GGR7Wg6x2nWI%2BKxOvA%3D", oauth_signature_method="HMAC-SHA1",
-        oauth_timestamp="1415210952", oauth_token="udKMZsaQQ5B3UuXNob4jHtOuzPW4scNl",
+        oauth_timestamp="1415210952", oauth_token="<%= ENV['YELP_TOKEN'] %>",
         oauth_version="1.0"
   response:
     status:

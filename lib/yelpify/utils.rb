@@ -18,6 +18,5 @@ module Yelpify
         val
       end
     end
-
   end
 end

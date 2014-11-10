@@ -1,6 +1,5 @@
 require 'spec_helper'
 
-
 describe Yelpify::Client do
     before(:all) do
       @creds = {
@@ -9,12 +8,7 @@ describe Yelpify::Client do
         :token           => ENV['YELP_TOKEN'], 
         :token_secret    => ENV['YELP_TOKEN_SECRET']
       }
-      # @auth = Yelpify::Authorization.new(@creds)
-      # @new_search   = Yelpify::Search.new
-      # @new_business = Yelpify::Business.new
-      # @client       = Yelpify::Client.new(@auth.access_token, @new_search, @new_business)
-      @client       = Yelpify.new_client(@creds)
-
+      @client = Yelpify.new_client(@creds)
     end
 
   describe '#initialize' do
@@ -31,6 +25,7 @@ describe Yelpify::Client do
         "location"        => "austin, texas",
         "category_filter" => "active,arts"
       }
+      
       VCR.use_cassette('search') do
         response = @client.search(search_data)
         expect(response).to be_a(OpenStruct)
@@ -49,9 +44,4 @@ describe Yelpify::Client do
       end
     end
   end
-
-
 end
-
-# test that a hash is returned
-# instance_variable_get (look that up)

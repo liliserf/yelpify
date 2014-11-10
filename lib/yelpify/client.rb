@@ -27,17 +27,3 @@ module Yelpify
 
   end
 end
-
-# #initialize creates a new yelp client using the access_token
-# from the Authorization Class. 
-
-# acess_token has an attr_reader so that it can be called
-# from the Yelpify module?
-
-# #search calls to the Search Class to generate a new search 
-# path using the hash of data passed in. it then calls the 
-# #get(url) from within the Client Class to generate the API
-# call and send it through OAuth (using the access_token) and
-# return a parsed JSON object.
-
-# The same thing happens in #business.

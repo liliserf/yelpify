@@ -2,11 +2,9 @@ require 'spec_helper'
 
 describe Yelpify::Business do
     before(:all) do
-    @search_data = {}
-    
-    @id = "yelp-san-francisco"
-
-  end
+      @search_data = {}
+      @id = "yelp-san-francisco"
+    end
 
   describe '#build_url' do 
     it 'generates search path' do

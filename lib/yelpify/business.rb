@@ -13,8 +13,3 @@ module Yelpify
     end
   end
 end
-
-# the Business Class takes the business id
-# and an optional hash of search data to 
-# generate a path to use for the search in the 
-# Client Class.
