@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["lili.serfaty@gmail.com"]
   spec.summary       = %q{Facilitate the use of the yelp API.}
   spec.description   = %q{Facilitate the use of the yelp API.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/liliserf/yelpify"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
