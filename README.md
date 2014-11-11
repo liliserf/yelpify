@@ -24,13 +24,13 @@ Or install it yourself as:
 
 To begin use of Yelpify, you must first instantiate a new client by passing in a hash of the API keys acquired from Yelp (http://www.yelp.com/developers).
 
-  oauth_creds = {
-    consumer_key:    <YELP KEY>,
-    consumer_secret: <YELP SECRET>,
-    token:           <YELP TOKEN>,
-    token_secret:    <YELP TOKEN SECRET>
-  }
-  client = Yelpify.new_client(oauth_creds)
+	oauth_creds = {
+	consumer_key:    <YELP KEY>,
+	consumer_secret: <YELP SECRET>,
+	token:           <YELP TOKEN>,
+	token_secret:    <YELP TOKEN SECRET>
+	}
+	client = Yelpify.create_new(oauth_creds)
 
 Your new client is equipped with both search and business functionality.
 
